@@ -40,27 +40,35 @@ function multiplyThree(num1, num2, num3) {
   console.log('in multiplyThree:', num1, '*', num2, '*', num3);
   return num1 * num2 * num3;
 }
-console.log(multiplyThree(2, 3, 4)); 
+console.log( 'Checking to see that 24 is returned: ', multiplyThree(2, 3, 4) ); 
 
 
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive(number) {
+  console.log( 'in isPosistive', number );
   if (number > 0) {
-    return;
+    return true;
   }
-  return;
+  else (number < 0)
+  return false;
 }
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
+console.log( 'Checking to see if 9 is Positive: ', isPositive(9) );
+console.log( 'Checking to see if -1 is Positive: ', isPositive(-1) );
 
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 function getLast(array) {
-
+  console.log('in getLast:', array);
+  return array[array.length - 1];
 }
+console.log( 'Testing to see if 3 is returned: ', getLast([1, 2, 3]) ); // 3
+console.log( 'Testing to see if "undefined" is returned from an empty array: ', getLast([]) );        // undefined
+
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
