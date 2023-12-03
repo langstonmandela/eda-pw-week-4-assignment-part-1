@@ -74,8 +74,17 @@ console.log( 'Testing to see if "undefined" is returned from an empty array: ', 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find(value, array) {
-
+  console.log('in find:', value, array);
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === value) {
+      return true;
+    }
+  }
+  return false;
 }
+console.log( 'Testing to see if True is returned when we ask the function to find 2 in the array: ', find( 2, [1, 2, 3] ) ); // true
+console.log( 'Testing to see if False is returned when we ask the function to find 4 in the array: ', find( 4, [1, 2, 3] ) ); // false
+
 
 // ----------------------
 // Stretch Goals
