@@ -27,15 +27,21 @@ console.log(helloName('Johnny Tsunami'));
 
 
 // 3. Function to add two numbers together & return the result
-function addNumbers(firstNumber) {
+function addNumbers( firstNumber, secondNumber ) {
+  console.log( 'in addNumbers: ', firstNumber, '+', secondNumber );
+    let answer = firstNumber + secondNumber;
+    return answer;
   // return firstNumber + secondNumber;
 }
 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {
-
+function multiplyThree(num1, num2, num3) {
+  console.log('in multiplyThree:', num1, '*', num2, '*', num3);
+  return num1 * num2 * num3;
 }
+console.log(multiplyThree(2, 3, 4)); 
+
 
 
 // 5. Function that will return true if a number is positive, 
