@@ -20,10 +20,10 @@ function helloName(namedPerson){
 } // end helloName
 
 // Remember to call the function to test
-console.log(helloName('LangBaby'));
-console.log(helloName('Lil Sims'));
-console.log(helloName('Mayor Hawthorne'));
-console.log(helloName('Johnny Tsunami'));
+console.log( ' "Hello Langbaby!", should be returned: ', helloName('LangBaby')) ;
+console.log( helloName('Lil Sims') ); // additional tests: "Hello Lil Sims!" should be returned
+console.log( helloName('Mayor Hawthorne') ); // further test
+console.log( helloName('Johnny Tsunami') ); // further test
 
 
 // 3. Function to add two numbers together & return the result
@@ -34,6 +34,7 @@ function addNumbers( firstNumber, secondNumber ) {
   // return firstNumber + secondNumber;
 }
 
+console.log( 'Testing to see if 8 is returned: ', addNumbers( 4, 4 ) );
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree(num1, num2, num3) {
